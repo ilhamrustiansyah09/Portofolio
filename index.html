@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional | Ilham Rustiansyah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+
+        h1,
+        h2,
+        h3,
+        .nav-brand {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .bg-grid {
+            background-image: linear-gradient(to right, rgba(96, 165, 250, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(96, 165, 250, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: #60a5fa;
+            transform: translateY(-5px);
+        }
+
+        .input-custom {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            color: white;
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-grid">
+
+<!-- Navbar -->
+<nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-white/10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- FOTO & NAMA SEJAJAR -->
+        <div class="flex items-center gap-3">
+            <img src="poto cv.jpeg" alt="Ilham"
+                class="w-10 h-10 rounded-full border-2 border-blue-500 object-cover">
+            <div class="nav-brand text-2xl font-bold text-gradient tracking-tighter">ILHAM RUSTIANSYAH</div>
+        </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition">Tentang</a>
+                <a href="#education" class="hover:text-blue-400 transition">Pendidikan</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Pengalaman</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skil</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gradient mb-6 uppercase leading-tight">Selamat
+                    datang di portofolio profesional saya</h1>
+                <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                    Saya Ilham Rustiansyah, lulusan baru dengan jurusan teknik logistik dari SMKN 1 Garut yang memiliki
+                    minat besar di bidang logistik dan pergudangan. Portofolio ini merangkum pencapaian akademis, Pengalaman,
+                    dan keterampilan teknis yang telah saya asah untuk memberikan kontribusi nyata bagi perusahaan Anda.
+                    Terima kasih telah meluangkan waktu untuk mengenal potensi saya lebih jauh.
+                </p>
+                <a href="#contact"
+                    class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl font-bold transition">Kontak Saya</a>
+            </div>
+            <div class="flex flex-col items-center" data-aos="zoom-in">
+                <div class="relative p-2 border-2 border-blue-500 rounded-2xl float-animation">
+                    <img src="poto airin.jpeg" alt="Ilham"
+                        class="rounded-xl w-64 md:w-80 shadow-2xl">
+                </div>
+                <div class="flex space-x-10 mt-12">
+                    <a href="https://wa.me/6283169561305" class="text-3xl hover:text-green-500 transition hover:scale-125"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ilhamrustiansyah09?igsh=a2d6dzk1bGZtcnVt" class="text-3xl hover:text-pink-500 transition hover:scale-125"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ilham-rustiansyah-b52b9839b?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="text-3xl hover:text-blue-500 transition hover:scale-125"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+<section id="about" class="py-24 px-6 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
+    <div class="container mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gradient uppercase" data-aos="fade-up">Tentang Saya</h2>
+            <p class="text-sm italic text-gray-400 mt-2">"Profesionalisme dan efisiensi adalah prioritas saya dalam
+                logistik"</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="glass-card p-10 rounded-3xl border-l-4 border-blue-500" data-aos="fade-right">
+                <!-- Paragraf Baru Kamu -->
+                <div class="text-gray-300 leading-relaxed space-y-4 text-sm md:text-base">
+                    <p>
+                    "Saya adalah pribadi yang terorganisir, teliti, dan disiplin. Sebagai lulusan Manajemen Logistik 2026, saya memiliki
+                    fokus kuat pada ketepatan administrasi dan efisiensi operasional. Saya terbiasa mengelola data secara sistematis dan
+                    percaya bahwa keteraturan dokumen adalah kunci kelancaran rantai pasok. Dengan integritas tinggi, saya siap membangun
+                    masa depan karir yang cerah melalui dedikasi dan kerja keras."
+                    </p>
+                </div>
+            </div>
+                <div class="flex flex-col items-center" data-aos="fade-left">
+                    <div
+                        class="relative p-2 border-4 border-blue-500 rounded-full border-dashed animate-spin-slow mb-6">
+                        <img src="kedai kopi.jpeg"
+                            class="rounded-full w-56 h-56 object-cover border-4 border-slate-900">
+                    </div>
+                    <p class="italic text-sm text-gray-400 text-center max-w-sm">"Setiap langkah kecil hari ini adalah
+                        investasi untuk masa depan yang gemilang. Saya percaya bahwa kerja keras dan ketulusan akan
+                        selalu menemukan jalan menuju hasil yang luar biasa"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Pendidikan (Versi Foto Sekolah) -->
+<section id="education" class="py-24 px-6 bg-slate-900/10">
+    <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gradient mb-16 uppercase" data-aos="fade-up">Latar Belakang
+            Pendidikan</h2>
+
+        <div class="max-w-5xl mx-auto glass-card p-8 md:p-12 rounded-3xl border-t-4 border-blue-500" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row gap-10 items-start">
+
+                <!-- Sisi Kiri: Foto Sekolah & Nama -->
+                <div class="flex flex-col items-center text-center md:w-1/3">
+                    <div class="relative w-40 h-40 mb-6 group">
+                        <!-- Tempat Foto Sekolah -->
+                        <img src="Pictures/smkn 1 garut.png" alt="SMKN 1 Garut"
+                            class="w-full h-full object-cover rounded-2xl shadow-2xl border-2 border-blue-500/30 group-hover:border-blue-500 transition-all">
+                        <div
+                            class="absolute -bottom-3 -right-3 bg-blue-600 text-white p-2 rounded-lg text-xs font-bold shadow-lg">
+                            SMK Bisa!
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white uppercase tracking-tighter">SMKN 1 GARUT</h3>
+                    <p class="text-blue-400 font-semibold mb-4 text-sm">Teknik Logistik</p>
+                    <span
+                        class="px-4 py-1 bg-blue-500/10 text-blue-300 text-xs rounded-full border border-blue-500/30">2023
+                        - 2026</span>
+                </div>
+
+                <!-- Sisi Kanan: Deskripsi & Kompetensi -->
+                <div class="md:w-2/3 space-y-6">
+                    <p
+                        class="text-gray-300 leading-relaxed italic text-sm md:text-base border-l-2 border-blue-500/50 pl-4">
+                        "Selama masa studi, saya mendalami strategi manajemen rantai pasok global dan operasional
+                        logistik yang efisien. Saya fokus pada pengoptimalan alur barang dan informasi melalui
+                        pendekatan analitis dan teknologi terkini."
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                        <!-- List Kompetensi -->
+                        <div
+                            class="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition border border-transparent hover:border-blue-500/20">
+                            <i class="fas fa-warehouse text-blue-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-white leading-tight">Manajemen Gudang & Inventaris</p>
+                                <p class="text-[10px] text-gray-500 mt-1 uppercase">Stok, Tata Letak, FIFO/LIFO</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition border border-transparent hover:border-blue-500/20">
+                            <i class="fas fa-truck-moving text-purple-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-white leading-tight">Transportasi & Distribusi</p>
+                                <p class="text-[10px] text-gray-500 mt-1 uppercase">Rute Efektif & Multimoda</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition border border-transparent hover:border-blue-500/20">
+                            <i class="fas fa-network-wired text-green-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-white leading-tight">Supply Chain Management</p>
+                                <p class="text-[10px] text-gray-500 mt-1 uppercase">Alur Pengadaan & Konsumen</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition border border-transparent hover:border-blue-500/20">
+                            <i class="fas fa-microchip text-pink-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-white leading-tight">Teknologi Logistik</p>
+                                <p class="text-[10px] text-gray-500 mt-1 uppercase">Sistem ERP, WMS, Analisis Data</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-3 p-3 rounded-xl hover:bg-white/5 transition border border-transparent hover:border-blue-500/20 col-span-full">
+                            <i class="fas fa-globe-americas text-cyan-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-white leading-tight">Ekspor Impor</p>
+                                <p class="text-[10px] text-gray-500 mt-1 uppercase">Kepabeanan & Dokumen Internasional
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pengalaman Magang -->
+    <section id="experience" class="py-24 px-6 bg-slate-900/30">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gradient mb-16 uppercase" data-aos="fade-up">Pengalaman
+                Magang</h2>
+            <div class="max-w-4xl mx-auto glass-card p-10 rounded-3xl border-l-4 border-blue-500" data-aos="fade-up">
+                <div class="flex items-center gap-6 mb-8">
+                    <div
+                        class="w-20 h-20 bg-white rounded-xl flex items-center justify-center p-2 shadow-lg shadow-blue-500/20">
+                        <i class="fas fa-truck-loading text-4xl text-blue-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Staf Admin Logistik (Magang)</h3>
+                        <p class="text-blue-400 font-semibold text-lg">PT Diva Mutiara Logistik</p>
+                        <span
+                            class="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full border border-blue-500/30">Durasi:
+                            6 Bulan</span>
+                    </div>
+                </div>
+                <div class="space-y-6 text-gray-300">
+                    <p class="leading-relaxed border-b border-white/5 pb-4">
+                        Selama masa magang ini, saya berperan aktif dalam mendukung efisiensi operasional perusahaan
+                        baik di dalam kantor maupun di area lapangan. Saya menjembatani validasi data administrasi
+                        dengan kondisi riil di lapangan.
+                    </p>
+                    <div class="grid gap-4">
+                        <div class="flex gap-4"><i
+                                class="fas fa-check-circle text-purple-400 mt-1"></i><span><strong>Manajemen & Audit
+                                    Laporan:</strong> Mengecek rutin status laporan operasional guna menjamin keakuratan
+                                harian.</span></div>
+                        <div class="flex gap-4"><i
+                                class="fas fa-check-circle text-purple-400 mt-1"></i><span><strong>Koordinasi
+                                    Lapangan:</strong> Pengawasan dan koordinasi teknis di lapangan sesuai standar SOP
+                                yang berlaku.</span></div>
+                        <div class="flex gap-4"><i
+                                class="fas fa-check-circle text-purple-400 mt-1"></i><span><strong>Administrasi &
+                                    Pengarsipan:</strong> Mengelola dokumen logistik secara sistematis untuk kemudahan
+                                audit.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skil -->
+    <section id="skills" class="py-24 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gradient mb-16 uppercase" data-aos="zoom-in">Keahlian &
+                Kemampuan</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+                <!-- Keahlian Logistik -->
+                <div class="space-y-6" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-6 flex items-center gap-3"><i
+                            class="fas fa-boxes"></i> Keahlian Logistik</h3>
+                    <div class="grid gap-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4"><i
+                                class="fas fa-file-invoice text-purple-400"></i><span
+                                class="font-semibold text-sm">Administrasi Gudang & Pengarsipan</span></div>
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4"><i
+                                class="fas fa-eye text-purple-400"></i><span class="font-semibold text-sm">Operasional
+                                Lapangan (Monitoring Alur)</span></div>
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4"><i
+                                class="fas fa-clipboard-list text-purple-400"></i><span
+                                class="font-semibold text-sm">Kontrol Inventaris & Stock Opname</span></div>
+                    </div>
+                </div>
+
+                <!-- Software & Kreatif -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-purple-400 mb-6 flex items-center gap-3"><i
+                            class="fas fa-laptop-code"></i> Software & Kreatif</h3>
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-2xl border-r-4 border-green-500">
+                            <h4 class="font-bold text-green-400 mb-1 flex items-center gap-2"><i
+                                    class="fas fa-file-excel"></i> Microsoft Excel</h4>
+                            <p class="text-xs text-gray-400 italic">Mengolah data logistik, membuat tabel laporan, dan
+                                menggunakan rumus dasar untuk akurasi inventaris.</p>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border-r-4 border-blue-500">
+                            <h4 class="font-bold text-blue-400 mb-1 flex items-center gap-2"><i
+                                    class="fas fa-file-word"></i> Microsoft Word</h4>
+                            <p class="text-xs text-gray-400 italic">Menyusun dokumen administrasi, surat jalan, dan
+                                laporan operasional yang rapi.</p>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border-r-4 border-orange-500">
+                            <h4 class="font-bold text-orange-400 mb-1 flex items-center gap-2"><i
+                                    class="fas fa-file-powerpoint"></i> PowerPoint</h4>
+                            <p class="text-xs text-gray-400 italic">Membuat presentasi laporan hasil kerja atau prosedur
+                                operasional lapangan.</p>
+                        </div>
+                        <div class="glass-card p-5 rounded-2xl border-r-4 border-pink-500">
+                            <h4 class="font-bold text-pink-400 mb-1 flex items-center gap-2"><i
+                                    class="fas fa-video"></i> Video Editing (CapCut)</h4>
+                            <p class="text-xs text-gray-400 italic">Mahir dalam mengolah video dokumentasi lapangan dan
+                                editing laporan visual perusahaan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Guestbook -->
+    <section id="contact" class="py-24 px-6 border-t border-white/5">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-gradient mb-16 uppercase" data-aos="fade-up">Hubungi Saya</h2>
+
+            <!-- SISI KIRI: CV & SOSMED (Lebih Kecil) -->
+            <div class="md:col-span-4 space-y-4" data-aos="fade-right">
+                <div class="glass-card p-6 rounded-2xl border-b-4 border-blue-500 text-center">
+                    <i class="fas fa-file-pdf text-2xl text-blue-400 mb-3"></i>
+                    <h3 class="text-lg font-bold mb-3">Curriculum Vitae</h3>
+            
+                    <a href="CV ILHAM RUSTIANSYAH 1.pdf" download
+                        class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-lg font-bold text-xs transition flex items-center justify-center gap-2">
+                        <i class="fas fa-download"></i> UNDUH CV
+                    </a>
+                </div>
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Sisi Kanan: Media Sosial -->
+                <div class="grid grid-cols-2 gap-6" data-aos="fade-right">
+                    <a href="https://wa.me/6283169561305" target="_blank"
+                        class="glass-card p-6 rounded-2xl flex flex-col items-center hover:bg-green-500/10 transition group">
+                        <i class="fab fa-whatsapp text-4xl text-green-500 mb-3 group-hover:scale-110"></i><span
+                            class="font-bold text-sm">WhatsApp</span>
+                    </a>
+                    <a href="https://www.instagram.com/ilhamrustiansyah09?igsh=a2d6dzk1bGZtcnVt" target="_blank"
+                        class="glass-card p-6 rounded-2xl flex flex-col items-center hover:bg-pink-500/10 transition group">
+                        <i class="fab fa-instagram text-4xl text-pink-500 mb-3 group-hover:scale-110"></i><span
+                            class="font-bold text-sm">Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@ilhamrustiansyah?_r=1&_t=ZS-95rFx07woQU" target="_blank"
+                        class="glass-card p-6 rounded-2xl flex flex-col items-center hover:bg-gray-500/10 transition group">
+                        <i class="fab fa-tiktok text-4xl text-white mb-3 group-hover:scale-110"></i><span
+                            class="font-bold text-sm">TikTok</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ilham-rustiansyah-b52b9839b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"
+                        class="glass-card p-6 rounded-2xl flex flex-col items-center hover:bg-blue-500/10 transition group">
+                        <i class="fab fa-linkedin text-4xl text-blue-500 mb-3 group-hover:scale-110"></i><span
+                            class="font-bold text-sm">LinkedIn</span>
+                    </a>
+                </div>
+    
+                <!-- Sisi Kiri: Form Input -->
+                <div class="glass-card p-10 rounded-3xl" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-6 italic text-blue-400 uppercase tracking-widest">HRD Guestbook</h3>
+                    <form class="space-y-5" id="guestbookForm">
+                        <input type="text" id="hrdName" placeholder="Nama Anda / Nama Perusahaan"
+                            class="input-custom w-full p-4 rounded-xl outline-none focus:border-blue-500" required>
+                        <textarea id="hrdMessage" placeholder="Tuliskan pesan atau tawaran kerja di sini..."
+                            class="input-custom w-full p-4 rounded-xl h-32 outline-none focus:border-blue-500"
+                            required></textarea>
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 py-4 rounded-xl font-bold hover:shadow-lg hover:shadow-blue-500/30 transition-all text-white uppercase tracking-widest">
+                            Posting Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+  
+            <!-- BAGIAN: DAFTAR PESAN (Hanya muncul jika ada yang isi) -->
+            <div class="mt-20" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-10 text-center uppercase tracking-widest text-gray-500">Pesan Masuk Terbaru
+                </h3>
+                <!-- ID messageList ini dikosongkan total sesuai permintaan -->
+                <div id="messageList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Script untuk menjalankan fitur posting pesan secara instan -->
+    <script>
+        document.getElementById('guestbookForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('hrdName').value;
+            const message = document.getElementById('hrdMessage').value;
+            const list = document.getElementById('messageList');
+
+            // Logika warna border acak agar tampilan variatif
+            const colors = ['border-blue-500', 'border-purple-500', 'border-green-500', 'border-pink-500'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+            // Membuat kotak pesan baru secara otomatis
+            const newCard = `
+                    <div class="glass-card p-6 rounded-2xl border-b-4 ${randomColor} animate-bounce-short">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center font-bold text-blue-400 uppercase border border-blue-500/30">${name.charAt(0)}</div>
+                            <p class="font-bold text-sm text-white">${name}</p>
+                        </div>
+                        <p class="text-sm text-gray-400 italic leading-relaxed">"${message}"</p>
+                    </div>
+                `;
+
+            // Menambahkan pesan ke bagian atas daftar
+            list.insertAdjacentHTML('afterbegin', newCard);
+
+            // Reset form setelah kirim
+            this.reset();
+        });
+    </script>
+
+    <footer class="py-12 text-center text-gray-600 text-sm border-t border-white/5">
+        <p>&copy; 2026 Ilham Rustiansyah | SMKN 1 Garut | PT Diva Mutiara Logistik</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1200, once: true });</script>
+</body>
+
+</html>
